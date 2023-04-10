@@ -1,0 +1,22 @@
+
+
+
+<h1 class="home">HOME OF TRENDS</h1>
+
+<%= form_for search_path, method: :get do |f| %>
+  <p class="search">
+    <%= f.label "Search for" %>
+    <%= text_field_tag :q, params[:q] %>
+    <%= submit_tag "Search", name: nil %>
+  </p>
+<% end %>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <h3>
+        <%= link_to article.title, controller: "articles", action: "show", id: article._id%>
+      </h3>
+    </li>
+  <% end %>
+</ul>
