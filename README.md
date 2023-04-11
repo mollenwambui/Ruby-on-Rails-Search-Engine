@@ -19,7 +19,7 @@ I used CSS to do some styling
 
 I created an analytics page where if you go to that route "/analytics" you will see all your web analytics.
 
-The articles I created can be found on the "/articles" root
+The articles I created can be found on the "/articles" route
 
 
 
